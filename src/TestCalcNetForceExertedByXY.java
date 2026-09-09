@@ -48,7 +48,6 @@ public class TestCalcNetForceExertedByXY {
     private static void calcNetForceExertedByXY() {
         System.out.println("Checking setNetForce...");
 
-        /* uncomment when ready
         Planet p1 = new Planet(1.0, 1.0, 3.0, 4.0, 5.0, "jupiter.gif");
         Planet p2 = new Planet(2.0, 1.0, 3.0, 4.0, 4e11, "jupiter.gif");
 
@@ -72,8 +71,6 @@ public class TestCalcNetForceExertedByXY {
 
         checkEquals(133.4, round(xNetForce, 2), "calcNetForceExertedByX()");
         checkEquals(0.0, round(yNetForce, 2), "calcNetForceExertedByY()");
-
-         */
 
     }
 }

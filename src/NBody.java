@@ -1,4 +1,22 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class NBody {
+
+    public static double readRadius(String fname) {
+        try {
+            Scanner scan = new Scanner(new File(fname));
+            int numPlanets = scan.nextInt();
+            double radius = scan.nextDouble();
+            scan.close();
+            return radius;
+        } catch (FileNotFoundException e) {
+            System.out.println("Couldn't find the file");
+            System.exit(10000001);
+        }
+        return 0.0;
+    }
 
     public static void main(String[] args) {
         double totalTime = 157788000.0;
@@ -12,14 +30,12 @@ public class NBody {
 
         String fname = "./data/planets.txt";
 
-		/* uncomment after you create Planet class
 
 		Planet[] planets = null; // readPlanets(fname);
-        */
+
 
         double radius = 0.0; // readRadius(fname);
 
-		/* uncomment after you create Planet class
 
 		System.out.printf("%d\n", planets.length);
 		System.out.printf("%.2e\n", radius);
@@ -30,7 +46,6 @@ public class NBody {
 		                      planets[i].myMass, planets[i].myFileName);
 		}
 
-		*/
         StdDraw.setScale(-radius, radius);
         StdDraw.picture(0, 0, "images/starfield.jpg");
 

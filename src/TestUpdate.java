@@ -33,7 +33,6 @@ public class TestUpdate {
     private static void checkUpdate() {
         System.out.println("Checking update...");
 
-        /* uncomment when ready
 
         Planet p1 = new Planet(1.0, 1.0, 3.0, 4.0, 5.0, "jupiter.gif");
 
@@ -44,6 +43,6 @@ public class TestUpdate {
         checkEquals(3.4, p1.myXVel, "update()", 0.01);
         checkEquals(3.8, p1.myYVel, "update()", 0.01);
 
-         */
+
     }
 }
