@@ -78,7 +78,11 @@ public class Planet {
         this.myXVel += xAccel * seconds;
         this.myYVel += yAccel * seconds;
         this.myXPos += myXVel * seconds;
-        this.myYPos += myYPos * seconds;
+        this.myYPos += myYVel * seconds;
+    }
+
+    public void draw() {
+        StdDraw.picture(myXPos, myYPos, "images/"+myFileName);
     }
 
     public static void main(String[] args) {

@@ -15,7 +15,6 @@ public class TestReadPlanets {
         System.out.println("Checking readPlanets...");
         String planetsTxtPath = "./data/planets.txt";
 
-        /* uncomment when ready
 
         // If the following line fails to compile, you probably need to make
         // a certain method static!
@@ -88,7 +87,7 @@ public class TestReadPlanets {
             return "FAIL: readPlanets(); Not all planets have correct info!";
         }
 
-         */
+
         return "PASS: readPlanets(); Congrats! This was the hardest test!";
 
 
